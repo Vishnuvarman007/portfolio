@@ -174,7 +174,10 @@ const Projects = () => {
                 
                 {/* Action Buttons */}
                 <div style={{ display: 'flex', gap: '1rem' }}>
-                  <motion.button
+                  <motion.a
+                    href={project.title === 'QR Code Ticket Booking' ? 'https://github.com/Vishnuvarman007/Qr_code_ticket_booking' : '#'}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     style={{
@@ -188,12 +191,13 @@ const Projects = () => {
                       color: '#60a5fa',
                       cursor: 'pointer',
                       fontSize: '0.9rem',
-                      fontWeight: '500'
+                      fontWeight: '500',
+                      textDecoration: 'none'
                     }}
                   >
                     <Github size={16} />
                     Code
-                  </motion.button>
+                  </motion.a>
                   
                   <motion.button
                     whileHover={{ scale: 1.05 }}
